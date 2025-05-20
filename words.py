@@ -24,7 +24,7 @@ class WordManager:
             word.update(typed_letter)
 
             if word.is_finished():  
-                self.score.add_points(len(word.text))  # Increase score based on word length
+                self.score.increase_score(len(word.text))  # Increase score based on word length
                 self.words.remove(word)  # Remove completed word
 
         # Check for missed words

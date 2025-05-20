@@ -49,9 +49,7 @@ while running:
     else:
         # Display game over screen
         font = pygame.font.Font(None, 48)
-        text_surface = font.render(
-            f"Game Over! Score: {score.score}", True, (255, 255, 255)
-        )
+        text_surface = font.render(f"Game Over! Score: {score.score}", True, (255, 255, 255))
         screen.blit(text_surface, (300, 250))
 
     pygame.display.flip()
